@@ -19,13 +19,7 @@ import cloudflare from '@astrojs/cloudflare'
 
 export default defineConfig({
   // adapter: netlify(), // Set adapter for deployment, or set `linkCard` to `false` in `src/config.ts`
-  adapter: cloudflare(
-    {
-      platformProxy: {
-        enabled: false
-      }
-    }
-  ),
+  adapter: cloudflare(),
   site: themeConfig.site.website,
   image: {
     service: {
