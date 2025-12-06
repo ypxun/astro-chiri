@@ -3,11 +3,11 @@ import type { ThemeConfig } from './types'
 export const themeConfig: ThemeConfig = {
   // SITE INFO ///////////////////////////////////////////////////////////////////////////////////////////
   site: {
-    website: 'https://astro-chiri.netlify.app/', // Site domain
-    title: 'CHIRI', // Site title
-    author: '3ASH', // Author name
-    description: 'Minimal blog built by Astro', // Site description
-    language: 'en-US' // Default language
+    website: 'https://blog.sugarin.net/', // Site domain
+    title: 'Sugar', // Site title
+    author: 'Sugar', // Author name
+    description: '个人小憩', // Site description
+    language: 'zh-CN' // Default language
   },
 
   // GENERAL SETTINGS ////////////////////////////////////////////////////////////////////////////////////
@@ -24,7 +24,7 @@ export const themeConfig: ThemeConfig = {
   date: {
     dateFormat: 'YYYY-MM-DD', // Date format: YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
     dateSeparator: '.', // Date separator: . - / (except for MONTH DAY YYYY and DAY MONTH YYYY)
-    dateOnRight: true // Date position in post list (true for right, false for left)
+    dateOnRight: false // Date position in post list (true for right, false for left)
   },
 
   // POST SETTINGS ///////////////////////////////////////////////////////////////////////////////////////

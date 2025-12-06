@@ -14,10 +14,12 @@ import remarkTOC from './src/plugins/remark-toc.mjs'
 import { themeConfig } from './src/config'
 import { imageConfig } from './src/utils/image-config'
 import path from 'path'
-import netlify from '@astrojs/netlify'
+// import netlify from '@astrojs/netlify'
+import cloudflare from '@astrojs/cloudflare'
 
 export default defineConfig({
-  adapter: netlify(), // Set adapter for deployment, or set `linkCard` to `false` in `src/config.ts`
+  // adapter: netlify(), // Set adapter for deployment, or set `linkCard` to `false` in `src/config.ts`
+  adapter: cloudflare(),
   site: themeConfig.site.website,
   image: {
     service: {
@@ -50,4 +52,8 @@ export default defineConfig({
   devToolbar: {
     enabled: false
   }
+  // server: {
+  //   host: '127.0.0.1',
+  //   port: 4321
+  // },
 })
