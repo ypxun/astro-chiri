@@ -47,3 +47,6 @@ export const { getStaticPaths, GET } = OGImageRoute({
     ]
   })
 })
+
+// 在页面导出中添加
+export const prerender = true; // 强制预渲染
