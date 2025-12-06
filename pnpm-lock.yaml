@@ -29,9 +29,6 @@ importers:
       astro:
         specifier: ^5.16.3
         version: 5.16.3(@netlify/blobs@10.4.1)(@types/node@24.10.1)(jiti@2.6.1)(rollup@4.53.3)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
-      astro-og-canvas:
-        specifier: ^0.7.2
-        version: 0.7.2(astro@5.16.3(@netlify/blobs@10.4.1)(@types/node@24.10.1)(jiti@2.6.1)(rollup@4.53.3)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))
       canvaskit-wasm:
         specifier: ^0.40.0
         version: 0.40.0
@@ -1955,12 +1952,6 @@ packages:
     resolution: {integrity: sha512-JepyLROIad6f44uyqMF6HKE2QbunNzp3mYKRcPoDGt0QkxXmH222FAFC64WTyQu2Kg8NNEXHTN/sWuUId9sSxw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro-og-canvas@0.7.2:
-    resolution: {integrity: sha512-i7sWbdpl2MMF7wUZqSfzMnhW4c7GQz6s7T4BUJ7E06MqasZRHjJytn0n6D0JJkGDeTpZnU7E00A6Ffx0pRB4kg==}
-    engines: {node: '>=18.14.1'}
-    peerDependencies:
-      astro: ^3.0.0 || ^4.0.0 || ^5.0.0
-
   astro@5.16.3:
     resolution: {integrity: sha512-KzDk41F9Dspf5fM/Ls4XZhV4/csjJcWBrlenbnp5V3NGwU1zEaJz/HIyrdKdf5yw+FgwCeD2+Yos1Xkx9gnI0A==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
@@ -2452,10 +2443,6 @@ packages:
 
   entities@6.0.1:
     resolution: {integrity: sha512-aN97NXWF6AWBTahfVOIrB/NShkzi5H7F9r1s9mD3cDj4Ko5f2qhhVoYMibXF7GlLveb/D2ioWay8lxI97Ven3g==}
-    engines: {node: '>=0.12'}
-
-  entities@7.0.0:
-    resolution: {integrity: sha512-FDWG5cmEYf2Z00IkYRhbFrwIwvdFKH07uV8dvNy0omp/Qb1xcyCWp2UDtcwJF4QZZvk0sLudP6/hAu42TaqVhQ==}
     engines: {node: '>=0.12'}
 
   env-paths@3.0.0:
@@ -6545,13 +6532,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro-og-canvas@0.7.2(astro@5.16.3(@netlify/blobs@10.4.1)(@types/node@24.10.1)(jiti@2.6.1)(rollup@4.53.3)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)):
-    dependencies:
-      astro: 5.16.3(@netlify/blobs@10.4.1)(@types/node@24.10.1)(jiti@2.6.1)(rollup@4.53.3)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
-      canvaskit-wasm: 0.40.0
-      deterministic-object-hash: 2.0.2
-      entities: 7.0.0
-
   astro@5.16.3(@netlify/blobs@10.4.1)(@types/node@24.10.1)(jiti@2.6.1)(rollup@4.53.3)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2):
     dependencies:
       '@astrojs/compiler': 2.13.0
@@ -7083,8 +7063,6 @@ snapshots:
   entities@4.5.0: {}
 
   entities@6.0.1: {}
-
-  entities@7.0.0: {}
 
   env-paths@3.0.0: {}
 
