@@ -27,8 +27,11 @@ importers:
         specifier: ^0.1.2
         version: 0.1.2(@netlify/blobs@10.5.0)(@types/node@25.0.9)(jiti@2.6.1)(rollup@4.55.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
       astro:
-        specifier: ^5.16.10
+        specifier: ^5.16.11
         version: 5.16.11(@netlify/blobs@10.5.0)(@types/node@25.0.9)(jiti@2.6.1)(rollup@4.55.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
+      astro-og-canvas:
+        specifier: ^0.10.0
+        version: 0.10.0(astro@5.16.11(@netlify/blobs@10.5.0)(@types/node@25.0.9)(jiti@2.6.1)(rollup@4.55.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2))
       canvaskit-wasm:
         specifier: ^0.40.0
         version: 0.40.0
@@ -1964,6 +1967,11 @@ packages:
   astro-eslint-parser@1.2.2:
     resolution: {integrity: sha512-JepyLROIad6f44uyqMF6HKE2QbunNzp3mYKRcPoDGt0QkxXmH222FAFC64WTyQu2Kg8NNEXHTN/sWuUId9sSxw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  astro-og-canvas@0.10.0:
+    resolution: {integrity: sha512-JkSIYEo2sTJiuht7iVQ2CNT38+rrlvkRpJkqjA58WDFHdymgWktoT9zLkjEkn2u9K2zeZx2GTev16IBJzIoZNQ==}
+    peerDependencies:
+      astro: ^5.0.0 || ^6.0.0-alpha
 
   astro@5.16.11:
     resolution: {integrity: sha512-Z7kvkTTT5n6Hn5lCm6T3WU6pkxx84Hn25dtQ6dR7ATrBGq9eVa8EuB/h1S8xvaoVyCMZnIESu99Z9RJfdLRLDA==}
@@ -6540,6 +6548,13 @@ snapshots:
       semver: 7.7.3
     transitivePeerDependencies:
       - supports-color
+
+  astro-og-canvas@0.10.0(astro@5.16.11(@netlify/blobs@10.5.0)(@types/node@25.0.9)(jiti@2.6.1)(rollup@4.55.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)):
+    dependencies:
+      astro: 5.16.11(@netlify/blobs@10.5.0)(@types/node@25.0.9)(jiti@2.6.1)(rollup@4.55.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2)
+      canvaskit-wasm: 0.40.0
+      deterministic-object-hash: 2.0.2
+      entities: 7.0.0
 
   astro@5.16.11(@netlify/blobs@10.5.0)(@types/node@25.0.9)(jiti@2.6.1)(rollup@4.55.1)(tsx@4.21.0)(typescript@5.9.3)(yaml@2.8.2):
     dependencies:
