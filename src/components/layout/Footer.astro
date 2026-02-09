@@ -1,6 +1,9 @@
 ---
 import { themeConfig } from '@/config'
 const today = new Date()
+const startYear = 2023  // 你的第一篇博客年份
+const currentYear = today.getFullYear()
+const yearDisplay = startYear === currentYear ? startYear : `${startYear}-${currentYear}`
 ---
 
 <footer>
@@ -8,7 +11,7 @@ const today = new Date()
     <div class="copyright">
       <span class="date">
         &copy;
-        {today.getFullYear()}
+        {yearDisplay}
       </span>
       {themeConfig.site.author}
     </div>
